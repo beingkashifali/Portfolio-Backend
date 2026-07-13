@@ -9,7 +9,7 @@ const contactRouter = require("./routes/contact");
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://whoiskashifali.netlify.app/"],
+    origin: ["https://whoiskashifali.netlify.app", "http://localhost:5173"],
   }),
 );
 app.use(express.json());
