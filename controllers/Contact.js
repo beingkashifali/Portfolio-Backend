@@ -16,10 +16,6 @@ const sendMessage = async (req, res) => {
 
     // Using Gmail
     const mailOptions = {
-      host: "smtp.gmail.com",
-      port: 587,
-      secure: false,
-      family: 4, // Force IPv4
       from: email,
       replyTo: email,
       to: process.env.GMAIL_USER,
